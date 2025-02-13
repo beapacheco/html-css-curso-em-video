@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* tudo que é @ é uma regra*/
+body {
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+h1{
+    color: darkblue;
+    background-color: lightseagreen;
+}
+h2{
+    color: rgb(135, 32, 196);
+}
+p{
+    text-align: justify;
+}

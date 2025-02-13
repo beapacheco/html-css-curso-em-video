@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            border: 7px solid rgb(45, 156, 45);
+            /* shorting hand: width, style e color */
+            
+            padding: 10px 10px 10px 10px;
+           
+             /* shorting hand: top, right, bottom, left -- se os 4 valores forem iguais é só informar uma vez
+             
+             se colocar:display: padding: 10px 20px é
+             padding top e bottom 10px
+             padding right e left 20px
+
+             */
+
+            margin: 20px auto 20px auto;
+            /* quando coloca auto na esq e direita ele centraliza automaticamente */
+
+            outline: 5px solid  green;
+        }
+
+            /* sempre começa no top e gira pra direita, sentido horário // outline pouco usado*/
+        a {
+            background-color: lightpink;
+            border-width: 3px;
+            border-style: dotted;
+            border-color: rgb(243, 112, 134);
+
+            padding: 10px;
+            /* se eu quiser que um inline vire block, é só colocar display: block ou vice e versa */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, <a href="#">mas os links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

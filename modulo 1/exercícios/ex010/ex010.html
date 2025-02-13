@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://www.tiktok.com/@bea.emcadacanto" target= "_blank" rel="external">tiktok de viagem</a></p> <!--só escrever a ... e o target= "_blank" faz o link ser aberto em outra guia-->
+      <!--quando é no mesmo site, não precisa necessariamente abrir outra pagina, mas se for um link externo, é bom abrir outra guia-->
+    <p>Você também pode acessar o meu <a href="https://www.instagram.com/bea.emcadacanto/#" target= "_blank" rel="nofollow">instagram de viagem</a></p>
+    <!--esses rel são mais pro google entender, então é pro mecanismo de busca, normalmente usado pra patrocinadores ou links que não são confiáveis. Ao usar 'nofollow' você tá informando ao google que está divulgando os serviços de tal cliente, mas não "põe a mão no fogo" por ele, caso ele venha a enganar alguém.-->
+<h1>Usando links internos</h1>
+<p>Esta é a primeira página do site. Se você quiser, pode acessar também <a href="pag002.html" rel="next" target="_self">a segunda página</a></p> <!--next pra saber qual a próxima página e prev (de previous) pra saber qual a anterior-->
+<!--_self é pra quando é uma página do próprio site-->
+<p>Você pode acessar também a página 3. Clique  <a href="noticias/pag003.html">aqui</a></p>
+
+<h1>Links para download</h1>
+<ul>
+  <li><a href="livro/Monografia II Beatriz Pacheco Nunes (1).pdf" download="Monografia II Beatriz Pacheco Nunes (1).pdf">Monografia</a></li> <!--se colocar sem o download ele só abre em outra guia, mas se colocar esse download ele baixa direto no seu pc-->
+</ul>
+</body>
+</html>

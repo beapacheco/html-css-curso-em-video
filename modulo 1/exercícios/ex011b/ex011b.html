@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--MP4 e M4V (são ambos MP4), MKV, WEBM (arquivo pequeno mas c pessima qualidade), OGV-->
+    <!--1080p maximo a qualidade, senao fica mt pesado-->
+    
+    <!--<video src="midias/video3.ogv" width="500" controls></video
+
+    mas a melhor forma de fazer é colocando mais de uma opção, ou seja:-->
+
+    <video width="500" height="300" poster="imagens/thumb.png" controls autoplay loop>
+        <source src="midias/video.mp4" type="video/mp4">
+        <source src="midias/video1.mp4" type="video/mp4">
+        <source src="midias/video2.webm" type="video/webm">
+        <source src="midias/video3.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+    </video>
+
+    <!--quando colocamos vídeos no nosso próprio servidor, podemos passar por problemas como alto consumo de banda, site lento e incompatibilidade com alguns navegadores por conta dos codecs
+    
+    nesse caso o youtube e o vimeo podem ajudar-->
+    <h1>Inserindo vídeos do Youtube</h1>'   '
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQYVu94I998?si=5h5_Y40ximIo_f3d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--
+    entra no youtube, clica em compartilhar e incorporar...
+    vídeos no youtube só com direitos autorais liberados ou seus próprios que você subiu no youtube-->
+
+    <!--vimeo tem qualidade boa, mas o algoritmo do vimeo é pior, trava se a internet nao for tao boa ... PRA INCORPORAR MESMO JEITO DO YOUTUBE-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <!--assina-se o vimeo, dependendo vale ou n a pena-->
+    <div style="padding:54.06% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/126287950?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:40%;height:40%;" title="Klaus teaser ©2015 Sergio Pablos Animation Studios, S.L. &amp; ANTENA 3 FILMS, S.L.U. All rights reserved"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

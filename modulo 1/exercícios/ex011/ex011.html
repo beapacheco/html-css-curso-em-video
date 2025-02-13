@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <!--colocar imagens muito grandes e alterá-las só por CSS faz o arquivo ficar mt pesado ainda sim-->
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <!--começa com o tamanho maior na tag img, depois colocar o menor tamanho em cima, depois o medio, depois o grande, colocar uns 50 pixels de diferença pra não fazer barra de rolagem lateral; alterar max width, colocar o nome do local da imagem e colocar o tipo-->
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/breathe.mp3"  controls autopla></audio>
+    <!--primeira forma de fazer é colocar autoplay, que a musica vai automaticamente, pra pessoa poder pausar coloca o controls q é a barrinha de -->
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/breathe.mp3" type="audio/mpeg">
+        <source src="midia/áudio1.opus" type="audio/">
+    </audio>
+    <!--colocando o formato favorito em cima, os demais só vão ser carregados caso os de cima falhem.-->
+    <!--mpeg, ogg, wav tipos mais usados de audio-->
+
+    <!--preload indica se o áudio sera pre carregado ou nao e tem 3 formas: auto, metadata e none, o auto vai carregar o audio inteiro assim q a pag for carregada msm q n aperte play o q n é mt bom pq demora mais p site carregar, as vezes o audio é mt pesado // metadata vai colocar nome do arquivo, data, duração, etc // none nao carrega absolutamente nada só qnd o usuario clica play-->
+    <!--evitar usar arquivo wav pq é mtmt pesado-->
+    </body>
+</html>

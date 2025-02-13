@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        /* direção:- to right (90deg)
+		        - to left
+		        - to top
+		        - to bottom
+		        - circle
+		        - 45 deg */
+                /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient */
+        * {
+            height: 100%;
+        }
+        /* esse comando acima é a configuração global das CSS*/
+        body {
+                width: 100%;
+                height: 200px;
+                background-image: linear-gradient(to bottom, #8D03FA 150px, #FC00D9, #FE390B, #FE9D00, #FE018C);
+            }
+                       /*background: linear-gradient(0.75turn, #1bb2f3, #ab77e7, #a621ff);
+            0.75turn significa 0.75 de uma volta completa, ou seja, 270 graus (3/4 de uma volta completa). */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>
