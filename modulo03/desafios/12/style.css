@@ -17,7 +17,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: rgb(255, 255, 255);
     font-family: var(--fonte-padrao);
 }
 
@@ -44,10 +44,6 @@ main {
     padding-top: 70px;
 }
 
-main p {
-    padding-bottom: 40px;
-}
-
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -62,15 +58,32 @@ section.normal {
     color: black;
 } 
 
+section p {
+    padding-bottom: 2em;
+}
+
 section.imagem {
-    background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 .ultimo {
