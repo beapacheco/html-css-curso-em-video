@@ -7,16 +7,26 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            /* size: auto, cover, contain, tamanho fixo tipo 1000px ou 100% */
+            
+            size: auto, cover, contain, tamanho fixo tipo 1000px ou 100%
+            background-attachment: fixed;
+
+            scroll ou fixed
+
+            shorthand background: color, image, position, repeat, size, attachment
+            
+            size - o cover na regra deveria funcionar no shorthand mas tem que ser separado ainda */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         } 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,7 +37,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, libero error delectus quibusdam sint placeat modi deserunt? Voluptatibus ratione voluptates commodi, dolor, eligendi nulla hic necessitatibus rerum tenetur ut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi error eum? Modi necessitatibus officiis consequuntur, vero quae earum eos sit? Deserunt consequuntur quae cumque eaque quo possimus aspernatur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi temporibus dolorem, harum, quod, molestiae nulla quas minus provident commodi sequi. Ipsam accusamus debitis dolor voluptas! Sequi itaque soluta sit?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, libero error delectus quibusdam sint placeat modi deserunt? Voluptatibus ratione voluptates commodi, dolor, eligendi nulla hic necessitatibus rerum tenetur ut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi error eum? Modi necessitatibus officiis consequuntur, vero quae earum eos sit? Deserunt consequuntur quae cumque eaque quo possimus aspernatur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi temporibus dolorem, harum, quod, molestiae nulla quas minus provident commodi sequi. Ipsam accusamus debitis dolor voluptas! Sequi itaque soluta sit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, libero error delectus quibusdam sint placeat modi deserunt? Voluptatibus ratione voluptates commodi, dolor, eligendi nulla hic necessitatibus rerum tenetur ut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi error eum? Modi necessitatibus officiis consequuntur, vero quae earum eos sit? Deserunt consequuntur quae cumque eaque quo possimus aspernatur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi temporibus dolorem, harum, quod, molestiae nulla quas minus provident commodi sequi. Ipsam accusamus debitis dolor voluptas! Sequi itaque soluta sit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, libero error delectus quibusdam sint placeat modi deserunt? Voluptatibus ratione voluptates commodi, dolor, eligendi nulla hic necessitatibus rerum tenetur ut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi error eum? Modi necessitatibus officiis consequuntur, vero quae earum eos sit? Deserunt consequuntur quae cumque eaque quo possimus aspernatur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi temporibus dolorem, harum, quod, molestiae nulla quas minus provident commodi sequi. Ipsam accusamus debitis dolor voluptas! Sequi itaque soluta sit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, libero error delectus quibusdam sint placeat modi deserunt? Voluptatibus ratione voluptates commodi, dolor, eligendi nulla hic necessitatibus rerum tenetur ut magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi error eum? Modi necessitatibus officiis consequuntur, vero quae earum eos sit? Deserunt consequuntur quae cumque eaque quo possimus aspernatur adipisci. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nisi temporibus dolorem, harum, quod, molestiae nulla quas minus provident commodi sequi. Ipsam accusamus debitis dolor voluptas! Sequi itaque soluta sit?</p>
     </main>
 </body>
 </html>

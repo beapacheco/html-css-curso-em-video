@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            height: 94vh;
+            background-color: purple;
+            padding: 10px;
+            position: relative;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%; /* pode mexer no left e top se a position for absolute, e absolute normalmente é o que ta dentro, e relative é o que ta fora */
+            transform: translate(-50%, -50%);
+            /* esquerda, cima pq sao valores negativos, se fossem positivos iam mover para direita e baixo */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
