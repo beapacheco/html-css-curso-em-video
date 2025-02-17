@@ -3,4 +3,6 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
 
-<a href= "https://beapacheco.github.io/html-css-curso-em-video/modulo02/desafios/10/projeto.html" target="_blank">Executar o Desafio 10</a>  
+<a href= "https://beapacheco.github.io/projeto-android/" target="_blank">Executar Projeto Android</a>
+
+<a href= "https://beapacheco.github.io/projeto-cordel/" target="_blank">Executar Projeto Cordel</a> 
