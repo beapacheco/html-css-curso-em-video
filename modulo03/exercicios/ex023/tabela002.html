@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        /* nao ta funcionando em todos os navegadores, exemplo: safari */
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+        /* 2n - de dois em dois, pode usar quantos quiser, se quiser 3n 4n 5n
+        
+        odd (ímpar) ou 2n-1 - todas as linhas impares vao ficar com a configuração
+        even (par) 2n - mesma coisa mas com linhas pares*/
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num {
+            text-align: right;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        table
+        caption - legenda da tabela
+            thead
+                tr, td, th -- th para titulos, td para dados
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                    <th scope="col" style="width: 100px;">% da População Total</th>
+                    <!--
+                        scope col - os dados são referentes a coluna
+                        scope row - os dados são referentes a linha
+
+                        importante pra que os mecanismos de busca consigam analisar os dados de forma coerente
+                    -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 973 190</td>
+                    <td>21,88%</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 322 692</td>
+                    <td>10,11%</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 219 679</td>
+                    <td>7,91%</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 850 513</td>
+                    <td>6,96%</td>
+                </tr>  
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 824 665</td>
+                    <td>5,64%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11 229 915</td>
+                    <td>5,36%</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 539 029</td>
+                    <td> 4,46%</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 233 656</td>
+                    <td>4,33%</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 664 306</td>
+                    <td>4,1%</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">8 058 447</td>
+                    <td>3,75%</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num">7 350 483</td>
+                    <td>3,47%</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">7 010 960</td>
+                    <td>3,34%</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">4 281 209</td>
+                    <td>1,94%</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num">4 145 040</td>
+                    <td>1,96%</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num">4 102 129</td>
+                    <td>1,89%</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 836 399</td>
+                    <td>1,8%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3 446 071</td>
+                    <td>1,63%</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 375 646</td>
+                    <td>1,61%</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 220 104</td>
+                    <td>1,54%</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2 982 815</td>
+                    <td>1,39%</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2 901 895</td>
+                    <td>1,36%</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 291 077</td>
+                    <td>1,09%</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num">1 746 227</td>
+                    <td>0,78%</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 577 342</td>
+                    <td>0,74%</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">880 631</td>
+                    <td>0,41%</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num">802 837</td>
+                    <td>0,36%</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">716 793</td>
+                    <td>0,31%</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num">212 583 720</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse perspiciatis rerum impedit aliquam maxime nemo itaque delectus, quis officiis vero suscipit reiciendis fugiat tempore eum dolorum voluptatum laborum qui?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde dignissimos totam magni, maxime corporis quos ullam fugit officia vel facilis! Autem ratione, pariatur exercitationem assumenda provident esse dolor vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ratione omnis suscipit deserunt blanditiis numquam ea doloribus rem, harum incidunt beatae, iure quo, in necessitatibus facilis labore maiores accusamus reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate sapiente ratione dicta maiores natus sint, officia non blanditiis nulla debitis laborum fugit? Earum harum sint vero, voluptatem aspernatur ducimus.</p>
+
+</body>
+</html>
