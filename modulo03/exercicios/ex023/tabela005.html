@@ -29,34 +29,47 @@
             background-color: green;
         }
 
-        col.cnome {
-            background-color: pink;
-        }
-
-        col.csexo {
-            background-color: blue;
+        col.cgrupo {
+            background-color: red;
         }
 
         col.cidade {
-            background-color: yellow;
+            background-color: orange;
         }
 
         col.cprof {
-            background-color: green;
+            background-color: yellow;
         }
 
-        col. 
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
         <colgroup>
-            <col class="cnome">
-            <col class="csexo">
+            <col class="cgrupo" span="2">
             <col class="cidade">
             <col class="cprof">
         </colgroup>
+
+        <!--pode-se fazer também:
+        
+        .vermelho {
+        background-color: red
+        }
+
+        .amarelo {
+        background-color: yellow}
+
+        no html:
+
+        <col class="amarelo">
+        <col class="vermelho">
+        <col class="amarelo">
+        <col class="vermelho">
+
+        fica tipo efeito zebrado
+        -->
 
         <caption>Cadastro</caption>
         <tr>
