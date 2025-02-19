@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 100%;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui architecto ipsa dolorum cumque aliquid earum dignissimos vitae, accusantium quo, placeat error ullam reprehenderit repellat labore? Doloremque dolorem aliquam fuga?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi reiciendis doloremque officiis est beatae optio quidem perferendis, delectus velit odio numquam ipsam quia libero totam repudiandae, iure eos, perspiciatis eius? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ipsa ad repellendus, veritatis iure illum aliquam nemo. Eos quae obcaecati quisquam expedita, ab laborum, excepturi esse, iste tempore maxime officia?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ab fugiat at tenetur mollitia, sapiente, praesentium enim quas earum ex modi, harum cupiditate omnis error beatae veritatis hic totam quibusdam!</p><img src='imagens\psicologia.png'>">
+        <!-- usado para coisas pontuais, normalmente a melhor opção é criar um outro arquivo com o html e css se quiser colocar algo dentro do iframe-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita architecto temporibus animi, placeat fugit, impedit facilis enim exercitationem explicabo in earum esse ullam. Praesentium ab necessitatibus quibusdam earum dignissimos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem ipsum atque odio quaerat ullam officia, eos tempora dolore blanditiis facere laboriosam esse, iure commodi modi at alias saepe natus praesentium.</p>
+</body>
+</html>
