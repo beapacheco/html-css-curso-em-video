@@ -12,11 +12,26 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <!-- não vai sugerir os dados pra completar direto -->
+         <!-- o botão action faz com que o dado seja enviado para algum arquivo php, java, etc-->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+            <!-- dentro do label for sempre coloca o id -- LIGAÇÃO ID e LABEL-->
+             <!--input text para criar uma caixa de resposta com textos-->
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!--name: mais util para php e html
+            id: mais util para javascript e uso do label-->
         <p><input type="submit" value="Enviar"></p>
         <!--coloca dentro do value o que quer que esteja escrito no botão-->
     </form>
-</body>
+    <!--
+    métodos
+
+    GET: coloca os dados na url (método padrão) - usar quando os dados nao forem sensiveis, nao pede senha numero cartao de credito endereço cep etc, quando envia dados por get só pode enviar até 3.000 bytes aprox 3.000 letras
+
+    POST: nao coloca os dados na url, usa pra dados sensiveis (preferivel usar https), se nao quiser que os dados apareçam na url, se os dados tiverem mais de 3.000 bytes, se quiser enviar arquivos
+    -->
+</body> 
 </html>
